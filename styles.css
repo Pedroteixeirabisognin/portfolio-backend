@@ -1261,11 +1261,11 @@ body {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .metrics-strip {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .metric-item:nth-child(2) {
@@ -1274,26 +1274,67 @@ body {
 
   .highlights-grid,
   .edu-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .contact-box {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding: 28px;
   }
 }
 
+.hero-grid > *,
+.contact-box > *,
+.highlights-grid > *,
+.skills-grid > *,
+.edu-grid > *,
+.contact-cards,
+.contact-item-card {
+  min-width: 0;
+}
+
+.hero-title,
+.hero-role,
+.hero-summary {
+  overflow-wrap: anywhere;
+}
+
+.terminal-body {
+  overflow-x: auto;
+}
+
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .main-nav {
     display: none;
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .metrics-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-box {
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .contact-item-card {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .contact-value {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font-size: 0.84rem;
   }
 
   .metric-item {
