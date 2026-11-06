@@ -1030,6 +1030,18 @@ body {
   margin-bottom: 18px;
 }
 
+.edu-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border-strong);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.edu-link:hover {
+  color: var(--accent-primary);
+  border-bottom-color: var(--accent-primary);
+}
+
 .edu-meta {
   margin-top: auto;
   display: flex;
