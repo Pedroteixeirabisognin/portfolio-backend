@@ -15,7 +15,6 @@ Engenheiro de Software Backend Sênior com cerca de 10 anos de experiência no d
 ## Funcionalidades da Página
 
 - **Design Arquitetural Dark / Light**: Alternância de tema escuro e claro com persistência local.
-- **Bilíngue (PT-BR / EN)**: Alternância instantânea entre Português e Inglês.
 - **Filtro Interativo de Stack**: Visualização categorizada de competências técnicas (Backend, Arquitetura, Cloud, DevOps, Bancos de Dados e Frontend).
 - **Pronto para Impressão / PDF**: Folha de estilo `@media print` otimizada para geração limpa de currículo via navegador.
 - **Zero Dependências de Build**: HTML5 semântico, CSS3 moderno e JavaScript puro — pronto para publicação direta no **GitHub Pages**.
@@ -24,4 +23,4 @@ Engenheiro de Software Backend Sênior com cerca de 10 anos de experiência no d
 
 - `index.html` — Estrutura principal, metadados SEO/OpenGraph e dados estruturados (`JSON-LD`).
 - `styles.css` — Design system completo, variáveis de tema, responsividade e estilo de impressão.
-- `script.js` — Internacionalização (PT/EN), alternância de tema, filtro de habilidades e cópia rápida de contato.
+- `script.js` — Alternância de tema, filtro de habilidades e cópia rápida de contato.
