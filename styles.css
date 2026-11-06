@@ -1303,6 +1303,34 @@ body {
   overflow-x: auto;
 }
 
+.nav-actions {
+  flex-shrink: 0;
+}
+
+.brand {
+  min-width: 0;
+}
+
+.brand-badge {
+  flex-shrink: 0;
+}
+
+.brand-meta {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .site-header .brand-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main-nav {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   html,
   body {
